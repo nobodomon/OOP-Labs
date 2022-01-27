@@ -25,6 +25,6 @@ public class Circle extends GeometricObject{
 	}
 	
 	public double getDiameter() {
-		return Math.PI * (2 * radius);
+		return (2 * radius);
 	}
 }
