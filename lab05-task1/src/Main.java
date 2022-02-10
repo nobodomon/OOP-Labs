@@ -1,16 +1,19 @@
 import java.util.Scanner;
+interface PlayString {
+	
+	StringBuilder backwardsString(String s); 
 
-public class Main{
-	
-	
-	public static void main(String[] args) {
+}
+
+class Main {
+  public static void main(String[] args) {
+     
 		Scanner sc = new Scanner(System.in);
 		String input = "";
-		do {
-		System.out.println("Input one String: ");
+		System.out.println("Input a string");
 		input = sc.nextLine();
 		MyString ms = new MyString();
-		System.out.println("backward is: " + ms.backwardsString(input) + '\n');
-		}while(!input.isEmpty());
-	}
+		System.out.println("Inputted String: " + input);
+		System.out.println("backward is: " + ms.backwardsString(input));
+  }
 }
